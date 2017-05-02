@@ -1,5 +1,5 @@
+require 'rubygems'
 require 'sinatra/base'
-require 'data_mapper'
 require './models/link'
 
 class BookmarkManager < Sinatra::Base
