@@ -1,11 +1,12 @@
 require 'sinatra/base'
 require_relative './lib/link'
+require 'datamapper'
 
 class BookmarkManager < Sinatra::Base
-  enable :sessions
-  set :session_secret, 'super-secret'
 
   get '/' do
+
+    erb :index
   end
 
 
