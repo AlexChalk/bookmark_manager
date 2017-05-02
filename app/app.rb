@@ -1,9 +1,9 @@
+ENV['RACK_ENV'] ||= 'development'
 require 'rubygems'
 require 'sinatra/base'
 require './models/link'
 
 class BookmarkManager < Sinatra::Base
-
   before { @links = Link.all }
 
   get '/links' do
