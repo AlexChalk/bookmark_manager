@@ -18,7 +18,7 @@ class BookmarkManager < Sinatra::Base
   get '/links/new' do
     erb :'links/new'
   end
-    
+
 
   run! if app_file == $0
 end
