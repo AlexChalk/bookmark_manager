@@ -1,5 +1,5 @@
-require './models/tag'
-
-describe Tag do
-
-end
+# require './models/tag'
+#
+# describe Tag do
+#
+# end
