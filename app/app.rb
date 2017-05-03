@@ -6,6 +6,10 @@ require './models/link'
 class BookmarkManager < Sinatra::Base
   before { @links = Link.all }
 
+  get '/' do
+    redirect '/links'
+  end
+
   get '/links' do
     erb :'links/index'
   end
