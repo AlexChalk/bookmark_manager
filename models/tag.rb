@@ -1,6 +1,5 @@
 require 'data_mapper'
 require 'dm-postgres-adapter'
-require_relative 'link'
 
 class Tag
   include DataMapper::Resource
@@ -8,8 +7,6 @@ class Tag
   property :id, Serial
   property :name, String
 
-  # has n, :taggings
-  # has n, :posts, :through => :taggings
 end
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/bookmark_manager_#{ENV['RACK_ENV']}")
