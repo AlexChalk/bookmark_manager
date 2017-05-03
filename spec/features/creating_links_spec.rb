@@ -3,6 +3,7 @@ feature 'creating a link' do
     visit '/links/new'
     fill_in('link_name', with:'google')
     fill_in('link_url', with: 'http://www.google.com')
+    fill_in('link_tag', with: 'search engines')
     click_button 'Create new link'
 
     expect(current_path).to eq '/links'
@@ -10,6 +11,7 @@ feature 'creating a link' do
     within('ul#links') do
       expect(page).to have_content 'google'
       expect(page).to have_content 'http://www.google.com'
+      expect(page).to have_content 'search engines'
     end
   end
 end
