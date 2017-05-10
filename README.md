@@ -1,18 +1,7 @@
 # Bookmark Manager
-## Project User Stories
 
-As an internet user
-So that I can browse my bookmarks
-I want to see my saved bookmarks in a list
+An early iteration of a basic bookmark manager, to which links can be added and tagged. For a more advanced iteration of this project, please see [this repository](https://github.com/adc17/bookmark_manager_2) instead.
 
-As an internet user
-So that I can store new bookmarks
-I want to be able to add links to the list
+## Other notes
 
-As an internet user
-So that I can group related bookmarks
-I want to be able to tag links in the list
-
-As an internet user
-So that I can cut through a long list of bookmarks
-I want to be able to filter links by a tag
+Built during week four of the [Makers Academy](http://www.makersacademy.com) Bootcamp.
